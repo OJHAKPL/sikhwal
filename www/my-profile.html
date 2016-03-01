@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>jQuery Mobile Demos</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+	
+		<div data-role="page" class="jqm-demos jqm-page jqm-card" id="my-profile" data-url="my-profile">
+        
+        	<div data-role="header" class="jqm-header">                
+               <div class="left-icon">
+					<a href="#dashboard" class="back-button"><img src="images/back-icon.png" alt=""></a>
+					<a href="" class="bell-button"><img src="images/bell-icon.png" alt=""> <span class="counter counter-notify">0</span></a>
+				</div>
+				<div class="right-icon">
+					<a href="" class="tick-button"><img src="images/tick-icon.png" alt=""> <span class="counter">4</span></a>
+					<a href="" class="menu-button"><img src="images/menu-icon.png" alt=""></a>
+				</div>
+                <h1 class="title">My Profile</h1>
+            </div><!-- /header -->
+
+			<div role="main" class="ui-content jqm-content">
+                            
+                <div class="main-img"><img src="images/card-thumb.png" width="100%" alt=""></div>
+                <div class="card-header">
+                	<div class="pull-right">
+                    	<button><img src="images/edit-icon.png" width="24" alt=""></button>
+                    </div>
+                	<h3 class="title">GDM0133 – Gino Morin</h3>
+                    <p>abc@email.com</p>
+                    <p>8562 852 354</p>
+                </div>
+                <div class="page-form">
+					<input type="text" name="text-basic" placeholder="Name" id="text-basic" value="">
+					<input type="text" name="text-basic" placeholder="Email ID" id="text-basic" value="">
+                    <input type="text" name="text-basic" placeholder="Contact no." id="text-basic" value="">
+                    <input type="text" name="text-basic" placeholder="Password" id="text-basic" value="">
+                    <select><option>Select</option><option>Select1</option><option>Select2</option></select>
+				</div>
+                <button class="ui-btn ui-btn-submit ui-corner-all">Edit Profile</button>
+                
+			</div><!-- /content -->
+            
+            <div data-role="panel" class="main-menu jqm-navmenu-panel" data-position="right" data-display="overlay">
+                <ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="" data-ajax="false">My Profile</a></li>
+                    <li><a href="" data-ajax="false">My Cards</a></li>
+                    <li><a href="" data-ajax="false">Selected Cards</a></li>
+                    <li><a href="" data-ajax="false">Favorite Cards</a></li>
+                    <li><a href="" data-ajax="false">Change Password</a></li>
+                    <li><a href="" data-ajax="false">My Folders</a></li>
+                    <li><a href="" data-ajax="false">Logout</a></li>
+				</ul>
+			</div>
+
+		</div><!-- /page -->
+        
+        
+		<script src="js/index.js"></script>
+
+	</body>
+</html>

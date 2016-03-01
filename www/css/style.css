@@ -1,0 +1,902 @@
+
+body, input, select, textarea, button, .ui-btn, div, h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+    text-shadow: none;
+}
+.jqm-home {
+    font-family: "Open Sans";
+    text-shadow: none;
+}
+.card-shape {
+    padding: 0 0 15px;
+    text-align: center;
+}
+.card-shape img {
+    max-width: 100px;
+}
+.home-logo {
+    margin: 70px 0;
+    text-align: center;
+}
+.home-logo img {
+    max-width: 80%;
+}
+.home-buttons ul > li a.ui-btn {
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.home-buttons ul > li:first-child a.ui-btn {
+    border-radius: 5px 0 0 5px;
+    color: #00a8fe;
+}
+.home-buttons ul > li:last-child a.ui-btn {
+    border-radius: 0 5px 5px 0;
+}
+.rewards-line {
+    color: #ffd200;
+    margin: 50px 0 0;
+    text-align: center;
+}
+.rewards-line::before, .rewards-line::after {
+    font-size: 30px;
+    font-weight: bold;
+    margin: -9px;
+    position: absolute;
+    text-transform: uppercase;
+}
+.rewards-line a.ui-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.jqm-login .home-logo {
+    margin: 20px 0;
+}
+.login-form .ui-input-text {
+    border: medium none;
+    box-shadow: none;
+    margin: 0;
+}
+.login-form .ui-input-text:nth-child(1) {
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 1px;
+}
+.login-form .ui-input-text:nth-child(2) {
+    border-radius: 0 0 4px 4px;
+}
+.login-form .forgot-link {
+    text-align: right;
+}
+.login-form .forgot-link a.ui-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.login-form .keeps-checkbox {
+    margin: 0 -10px 15px;
+}
+.login-form .keeps-checkbox .ui-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-shadow: none;
+}
+.login-form .ui-btn-submit {
+    background: #179ee3 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+.login-form .ui-input-text input {
+    font-size: 16px;
+    padding: 8px 10px;
+}
+.login-form .other-link {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.login-form .other-link a.ui-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+.jqm-login .rewards-line {
+    margin-top: 30px;
+}
+.register-form .ui-input-text:nth-child(2) {
+    border-radius: 0;
+    margin-bottom: 1px;
+}
+.register-form .ui-input-text:nth-child(3) {
+    border-radius: 0 0 4px 4px;
+}
+.register-form .ui-input-text:nth-child(4) {
+    border-radius: 0 0 4px 4px;
+}
+.register-form .ui-btn-submit {
+    margin-top: 20px;
+}
+.jqm-page .jqm-header {
+    background: #000 none repeat scroll 0 0;
+    border: 0 none;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.jqm-page .jqm-header .title {
+    color: #fff;
+    font-size: 16px;
+}
+.jqm-page .jqm-header .right-icon {
+    float: right;
+    padding: 10px;
+}
+.jqm-page .jqm-header .left-icon {
+    float: left;
+    padding: 10px;
+}
+.jqm-page .jqm-header .ui-link {
+    display: inline-block;
+    height: 20px;
+    margin-left: 15px;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
+}
+.jqm-page .jqm-header .ui-link .counter {
+    background: #ff0000 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px 0;
+    position: absolute;
+    right: -7px;
+    top: -10px;
+}
+.jqm-page .jqm-header .left-icon .ui-link:first-child {
+    margin-left: 0;
+}
+.jqm-page .jqm-header .ui-link img {
+    max-width: 100%;
+}
+.cards-list {
+    width: 100%;
+}
+.cards-list .card-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+.cards-list .card-option {
+    bottom: 5px;
+    position: absolute;
+    right: 1px;
+    top: 0;
+}
+.cards-list .card-option .ui-link {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    bottom: 0;
+    display: block;
+    font: 0px/0 a;
+    height: calc(25% - 1px);
+    margin-bottom: 1px;
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.cards-list .card-option .ui-link::after {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.cards-list .card-option .ui-link img {
+    display: inline-block;
+    max-width: 80%;
+    vertical-align: middle;
+}
+.cards-list .card-option-open {
+    bottom: 4px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.cards-list .card-option-open .ui-link {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    font: 0px/0 a;
+    height: calc(25% - 1px);
+    margin-bottom: 1px;
+    padding: 0 5px;
+    text-align: center;
+}
+.cards-list .card-option-open .ui-link::after {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.cards-list .card-option-open .ui-link img {
+    display: inline-block;
+    max-width: 80%;
+    vertical-align: middle;
+}
+.dashboard-link {
+    background: #4a4a4a none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    margin: 0 -1em;
+    padding: 0 1em 15px;
+}
+.dashboard-link .ui-link {
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #373737 !important;
+    float: left;
+    font-weight: normal;
+    margin: 0 0.5%;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 24.333%;
+}
+.dashboard-link::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.folder-list {
+    padding: 1px 0;
+    position: relative;
+}
+.folder-list::before {
+    bottom: 0;
+    content: "";
+    left: 15px;
+    position: absolute;
+    top: 0;
+}
+.folder-list .title {
+    font-size: 18px;
+    margin-left: 16px;
+}
+.folder-list .title .add-btn {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 7px 10px;
+    width: auto;
+}
+.folder-list .title .add-btn .icon {
+    background: rgba(0, 0, 0, 0) url("../images/add-icon.png") no-repeat scroll 0 0;
+    float: left;
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+}
+.folder-list .title .add-btn.active {
+    background: #666666 none repeat scroll 0 0;
+    border-color: #666666;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    text-shadow: none;
+}
+.folder-list .title .add-btn.active .icon {
+    background: rgba(0, 0, 0, 0) url("../images/add-icon-white.png") no-repeat scroll 0 0;
+}
+.folder-list-wrapper {
+    list-style: outside none disc;
+    margin: 0 0 0 25px;
+    padding: 0;
+    position: relative;
+}
+.folder-list-wrapper > li {
+    background: rgba(0, 0, 0, 0) url("../images/folder-icon.png") no-repeat scroll 10px 0 / 18px auto;
+    list-style: outside none none;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+.folder-list-wrapper .counter {
+    color: #949494;
+}
+.jqm-page .jqm-footer {
+    background: #000 none repeat scroll 0 0;
+    border: 0 none;
+}
+.jqm-page .jqm-footer .rewards-line {
+    margin: 15px 0;
+}
+.jqm-page .jqm-footer .rewards-line a.ui-link {
+    font-size: 20px;
+}
+.jqm-list .jqm-content {
+    padding-bottom: 0;
+}
+.add-folder {
+    margin-left: 40px;
+    margin-top: -25px;
+}
+.add-folder .ui-input-text {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #666 -moz-use-text-color #666 #666;
+    border-image: none;
+    border-radius: 4px 0 0 4px;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    box-sizing: border-box;
+    height: 40px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.add-folder .ui-btn-submit {
+    background: #179ee3 none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    float: right;
+    height: 40px;
+    margin: 0;
+    padding: 0 20px;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: auto;
+}
+.notification-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.notification-list li {
+    clear: both;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    position: relative;
+}
+.notification-list li::before {
+    background: #d56bb6 none repeat scroll 0 0;
+    content: "";
+    height: 8px;
+    left: 0;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    width: 8px;
+}
+.notification-list li:nth-child(2n)::before {
+    background: #78ba4d none repeat scroll 0 0;
+}
+.notification-list .img {
+    float: left;
+    margin-right: 15px;
+    width: 30%;
+}
+.notification-list .img img {
+    max-width: 100%;
+}
+.notification-list .ui-link {
+    text-decoration: none;
+}
+.notification-list .text {
+    font-size: 14px;
+    line-height: 22px;
+}
+.folderhyper {
+    color: #333 !important;
+    font-weight: normal !important;
+    text-decoration: none;
+}
+.error {
+    background-color: #ffbaba;
+    color: #d8000c;
+}
+.success, .error {
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    border: 1px solid;
+    margin: 10px 0;
+    padding: 15px 10px 15px 15px;
+}
+.success {
+    background-color: #dff2bf;
+    color: #4f8a10;
+}
+.ticked-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.ticked-list::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.ticked-list > li {
+    box-sizing: border-box;
+    float: left;
+    padding: 0.5px;
+    position: relative;
+    width: 50%;
+}
+.ticked-list > li > .img {
+    font-size: 0;
+    line-height: 0;
+}
+.ticked-list > li > .img img {
+    max-width: 100%;
+}
+.ticked-list .card-option {
+    position: absolute;
+    right: 1px;
+    top: 2px;
+}
+.ticked-list .card-option .ui-link {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+.ticked-list .card-option .ui-link img {
+    max-width: 30px;
+}
+.jqm-ticked .jqm-footer {
+    background: #179ee3 none repeat scroll 0 0;
+    padding: 0;
+}
+.jqm-ticked .jqm-footer .or-text {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: normal;
+    height: 20px;
+    left: 50%;
+    line-height: 18px;
+    margin: -10px 0 0 -10px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 20px;
+    z-index: 9999;
+}
+.jqm-ticked .jqm-footer .ui-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    float: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 15px 0;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: 50%;
+}
+.jqm-ticked .jqm-footer .ui-btn:first-child {
+    border-right: 1px solid #fff;
+}
+.main-img {
+    line-height: 0;
+    margin: -1em -1em 0;
+}
+.marquee-text {
+    background: #14a0e6 none repeat scroll 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 -1.2em;
+    padding: 10px 25px;
+    position: relative;
+    white-space: nowrap;
+}
+.marquee-text::before {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(20, 160, 230, 1) 0%, rgba(255, 255, 255, 0) 100%) repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20%;
+}
+.marquee-text::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, rgba(20, 160, 230, 1) 0%, rgba(255, 255, 255, 0) 100%) repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+}
+.card-header {
+    background: #43b3eb none repeat scroll 0 0;
+    color: #fff;
+    margin: 0 -1em;
+    padding: 1px;
+}
+.card-header p {
+    margin: 0 0 15px 15px;
+}
+.card-header .ui-btn {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 10px 10px 8px;
+    width: auto;
+}
+.pull-right {
+    float: right;
+}
+.card-header .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0 10px 15px;
+}
+.card-details {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.card-details > li {
+    clear: both;
+    margin: 15px 0;
+    min-height: 32px;
+}
+.card-details .img {
+    float: left;
+    width: 32px;
+}
+.card-details .title {
+    margin-left: 57px;
+    padding-top: 5px;
+}
+.card-details .title .ui-link {
+    color: #373737;
+    font-weight: normal;
+    text-decoration: none;
+}
+.jqm-card .jqm-footer .ui-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+.jqm-card .jqm-footer .ui-btn span {
+    color: #139ce3;
+}
+.jqm-card .jqm-footer .ui-btn img {
+    margin: 0 10px;
+    vertical-align: bottom;
+}
+.card-icons {
+    background: #666 none repeat scroll 0 0;
+    box-shadow: 0 5px 7px #ccc;
+    margin: 0 -15px;
+    padding: 15px;
+    text-align: center;
+}
+.card-icons a {
+    margin-right: 10px;
+}
+.changepassword-form .ui-input-text {
+    border: medium none;
+    box-shadow: none;
+    margin: 0;
+}
+.changepassword-form .ui-input-text:nth-child(1) {
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 1px;
+}
+.changepassword-form .ui-input-text:nth-child(2) {
+    border-radius: 0;
+    margin-bottom: 1px;
+}
+.changepassword-form .ui-input-text:nth-child(3) {
+    border-radius: 0 0 4px 4px;
+}
+.changepassword-form .ui-btn-submit {
+    background: #179ee3 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+.jqm-navmenu-panel.main-menu {
+    background: #333 none repeat scroll 0 0;
+}
+.jqm-navmenu-panel.main-menu .ui-btn {
+    background: #000 none repeat scroll 0 0;
+    border-color: #444 !important;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: none;
+}
+.page-form {
+    margin-top: 20px;
+}
+.page-form .ui-input-text, .page-form .ui-select, .page-form .ui-checkbox-wrap {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-radius: 0;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 5px;
+}
+.page-form .ui-select .ui-btn {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: normal;
+    margin: 0;
+    padding: 7px;
+    text-align: left;
+}
+.page-form .ui-input-text:first-child, .page-form .ui-select:first-child, .page-form .ui-checkbox-wrap:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.page-form .ui-input-text:last-child, .page-form .ui-select:last-child, .page-form .ui-checkbox-wrap:last-child {
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+}
+.page-form + .ui-btn-submit {
+    background: #179ee3 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+.select_class {
+    border: 0 none;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+}
+.loderimages {
+    border-radius: 2.25em;
+    display: none;
+    height: 45px;
+    left: 0;
+    margin-top: 50%;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.loderimages img {
+    border-radius: 33px;
+}
+img.responsimg {
+    max-width: 98%;
+    width: 100%;
+}
+.card-listnew {
+    background: #4a4a4a none repeat scroll 0 0;
+    display: flex;
+    margin: 0 -1em;
+    padding: 0;
+}
+.card-listnew2 {
+    background: #4a4a4a none repeat scroll 0 0;
+    margin: 0 -1em;
+    padding: 1px 0 0;
+}
+.ui-icon-newedit {
+    background: rgba(0, 0, 0, 0) url("../images/edit-icon.png") no-repeat scroll 95% 32% / 25px 21px !important;
+    border: 0 none !important;
+    color: #fff !important;
+    float: right;
+    padding-top: 4px;
+    width: 100%;
+}
+.ui-icon-view {
+    background: rgba(0, 0, 0, 0) url("../images/view.png") no-repeat scroll 95% 32% / 25px 21px !important;
+    border: 0 none !important;
+    color: #fff !important;
+    float: right;
+    padding-top: 4px;
+    width: 100%;
+}
+.ui-icon-share {
+    background: rgba(0, 0, 0, 0) url("../images/share-icon2.png") no-repeat scroll 95% 32% / 25px 21px !important;
+    border: 0 none !important;
+    color: #fff !important;
+    float: right;
+    padding-top: 4px;
+    width: 100%;
+}
+.bgbuttonnew {
+    background: rgba(0, 0, 0, 0) url("../images/bar.png") repeat-x scroll 0 0;
+    height: 36px;
+    width: 100%;
+}
+.showhide-icon {
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 5px;
+    position: absolute;
+}
+.editshow-icon {
+    background-color: #ccc !important;
+    font-size: 14px;
+    height: 15px;
+}
+.margintoten {
+    margin-top: 10px;
+}
+.arrowiconleft-back {
+    opacity: 0.65;
+}
+.arrowiconrigth-back {
+    opacity: 0.65;
+}
+
+
+/******************************** Login page chang*******************************/
+
+/******************************** Login page chang*******************************/
+
+
+
+.background-images {
+  margin-top: -60px;
+  text-align: center;
+  width: 100%;
+}
+
+.button-next h2 {
+  font-family: Edwardian Script ITC;
+  margin: 0 0 20px;
+  text-align: center; font-size:54px; color:#fff;
+}
+.button-next{ margin-top:-220px;}
+
+.background-images img{ width:100% !important;}
+
+
+.ui-content{ padding:0px 0em 0em!important;}
+
+.ui-link.ui-btn.ui-btn-active {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgb(252, 145, 1) 1%, rgb(232, 100, 6) 69%, rgb(232, 100, 6) 100%) repeat scroll 0 0;
+  border-radius: 8px;
+  font-family: Myriad Pro !important;
+  font-size: 32px;
+  font-weight: normal;
+  margin: auto;
+  padding: 4px 25px !important;
+  width: 100px; border:none;
+}
+
+.home-logo{ margin:184px 0 0 0px!important;} 
+
+
+
+/*End home page chang*/
+
+
+
+/* Login page chang*/
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{ background-color:transparent!important;}
+
+#chang-backg{  background: rgba(0, 0, 0, 0) url("../images/inner_page_bg.png") no-repeat scroll 0 0; background-size:cover;}
+
+
+.jqm-page .jqm-header {
+  background: #a6900a none repeat scroll 0 0!important;
+  border: 0 none;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.title.ui-title {
+  padding: 5px 0 0;
+}
+
+
+.left-icon{margin: 35px 0 0 25px;}
+
+.right-icon{ margin:35px 25px 0 0;}
+.back-button.ui-link,.menu-button.ui-link { width:auto!important; height:auto!important;}
+
+.padding-space {
+  padding-top: 140px; text-align:center;
+}
+
+.ui-mobile [data-role="page"], .ui-mobile [data-role="dialog"], .ui-page{ min-height:inherit!important;}
+.heading {
+  font-family: Open Sans !important;
+  font-size: 33px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 31px;
+}
+
+.login-t {
+  border: 1px solid #acacac;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px #ccc;
+  font-size: 18px;
+  font-weight: normal;
+  height: 24px;
+  padding: 15px;
+  width: 470px; text-shadow: 0 0 1px;
+}
+
+.page-login {
+  margin-bottom: 22px; 
+}
+
+
+.yellow-color {
+  background: #ac9924 none repeat scroll 0 0 !important;
+}
+
+.button-Login h2 {
+  font-size: 16px;
+  margin: 33px 0;
+  text-align: center; font-family:Myriad Pro; font-size:22px; font-weight:normal;
+}
+
+
+
+/******************************** Login page chang*******************************/
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+	
+.button-next h2 {
+  color: #fff;
+  font-family: Edwardian Script ITC;
+  font-size: 28px;
+  text-align: center;
+}	
+	
+	}
+
+
+
+
+

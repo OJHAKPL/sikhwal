@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ND2NO</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+
+
+$(document).ready(function(){
+  
+  
+  alert('hi');
+  
+  alert(dump);
+  
+  
+  $("#home-login").click(function(){
+	
+	$.post("http://192.168.1.5/nd2no/admin/web-login",
+        {
+          email: $("#login-email").val(),
+          password: $("#login-password").val()
+        },
+        function(data,status){
+		
+		var Storage ={
+			 dump: data
+			};
+			//alert("Data: " + data + "\n Status: " + status);
+			$.mobile.changePage("cards-list.html");		
+            
+        });
+    });
+  
+  /*$("#home-login").click(function(){
+        $.getJSON("http://www.nd2nosmart.cards/nd2no/admin/web-login", function(result){
+            $.each(result, function(i, field){
+                $("#cont").append(field + " ");
+            });
+        });
+  });*/
+}); 
+</script>		
+		
+		
+	</head>
+<body>
+	
+		<div data-role="page" class="jqm-demos jqm-page jqm-list" id="card-list" data-url="card-list">
+        
+        	<div data-role="header" class="jqm-header">                
+                <div class="left-icon">
+                	<a href="#login" class="back-button"><img src="images/back-icon.png" alt=""></a>
+                	<a href="" class="bell-button"><img src="images/bell-icon.png" alt=""> <span class="counter">4</span></a>
+                </div>
+                <div class="right-icon">
+                	<a href="" class="tick-button"><img src="images/tick-icon.png" alt=""> <span class="counter">4</span></a>
+                	<a href="" class="menu-button"><img src="images/menu-icon.png" alt=""></a>
+                </div>
+                <h1 class="title">My Cards</h1>
+            </div><!-- /header -->
+
+			<div role="main" class="ui-content jqm-content">			
+				
+                <div class="cards-list">
+                	<div class="card-box">
+                    	<div class="card-option">
+                        	<a href="" class="tick-button"><img src="images/dot-icon.png" alt=""></a>
+                        </div>
+                    	<div class="img"><img width="100%" src="images/card-thumb.png" alt=""></div>
+                    </div>
+                    <div class="card-box">
+                    	<div class="card-option-open">
+                        	<a href="" class="tick-button"><img src="images/eye-icon.png" alt=""></a>
+                            <a href="" class="tick-button"><img src="images/edit-icon.png" alt=""></a>
+                            <a href="" class="tick-button"><img src="images/tick-icon-black.png" alt=""></a>
+                            <a href="" class="tick-button"><img src="images/delete-icon.png" alt=""></a>
+                        </div>
+                    	<div class="img"><img width="100%" src="images/card-thumb.png" alt=""></div>
+                    </div>
+                	<div class="card-box">
+                    	<div class="card-option">
+                        	<a href="" class="tick-button"><img src="images/dot-icon.png" alt=""></a>
+                        </div>
+                    	<div class="img"><img width="100%" src="images/card-thumb.png" alt=""></div>
+                    </div>
+                	<div class="card-box">
+                    	<div class="card-option">
+                        	<a href="" class="tick-button"><img src="images/dot-icon.png" alt=""></a>
+                        </div>
+                    	<div class="img"><img width="100%" src="images/card-thumb.png" alt=""></div>
+                    </div>
+                	<div class="card-box">
+                    	<div class="card-option">
+                        	<a href="" class="tick-button"><img src="images/dot-icon.png" alt=""></a>
+                        </div>
+                    	<div class="img"><img width="100%" src="images/card-thumb.png" alt=""></div>
+                    </div>
+                	<div class="card-box">
+                    	<div class="card-option">
+                        	<a href="" class="tick-button"><img src="images/dot-icon.png" alt=""></a>
+                        </div>
+                    	<div class="img"><img width="100%" src="images/card-thumb.png" alt=""></div>
+                    </div>
+                </div>
+                
+			</div><!-- /content -->
+
+		</div><!-- /page -->
+
+	</body>
+</html>
