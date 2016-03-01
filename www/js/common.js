@@ -12,57 +12,7 @@
 	
 	function pushNotify() {
 		
-		  var push = PushNotification.init({
-            "ios": {
-			 "alert": true,
-              "sound": true,
-              "vibration": true,
-              "badge": true,
-              "clearBadge": true
-            }
-        });
-
-        push.on('registration', function(data) {
-            // send data.registrationId to push service
-			$.post(
-			"http://192.168.1.5/nd2no/admin/web-device-tocken",
-			{
-				tocken_id: data.registrationId, //'adjadkdjkalskjsaaldkSAJKLD',
-				user_id: localStorage.getItem('userid')
-			},
-			function(data,status){
-				var dataArray = jQuery.parseJSON(data);
-				var htmlStr='';
-				$.each(dataArray, function(i, field){
-					
-				});					
-			});
-        }); 
-		
-		push.on('notification', function(data) {
-            // do something with the push data
-            // then call finish to let the OS know we are done
-			showAlert(data.message)
-			//alert(data.message);
-			//alert(data.title);
-			//alert(data.sound);
-			//alert(data.image);
-			//alert(data.additionalData);
-			// data.title,
-			// data.count,
-			// data.sound,
-			// data.image,
-			// data.additionalData
-			//alert(data.registrationId+'here');
-            push.finish(function() {
-				console.log("processing of push data is finished");
-            });
-        }); 
-		
-		push.on('error', function(e) {
-			showAlert(e.message+ 'error');
-			//console.log(e.message);
-		});
+		  
 		
 		
 	}	 
